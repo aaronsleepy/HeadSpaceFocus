@@ -10,7 +10,10 @@ import UIKit
 class FocusViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var refreshButton: UIButton!
     
+    
+    var curated: Bool = false
     var items: [Focus] = Focus.list
     
     // Datasource
@@ -23,6 +26,7 @@ class FocusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refreshButton.layer.cornerRadius = 10
         
         // datasource
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
@@ -41,6 +45,8 @@ class FocusViewController: UIViewController {
         dataSource.apply(snapshot)
         
         collectionView.collectionViewLayout = layout()
+        
+        toggleRefreshButtonTitle()
     }
 
     private func layout() -> UICollectionViewCompositionalLayout {
@@ -57,6 +63,27 @@ class FocusViewController: UIViewController {
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
+    }
+    
+    private func toggleRefreshButtonTitle() {
+        let title = curated ? "Seel All" : "See Recommendation"
+        refreshButton.setTitle(title, for: .normal)
+    }
+    
+    
+    @IBAction func refreshButtonTapped(_ sender: Any) {
+        print("button")
+        
+        curated.toggle()
+
+        self.items = curated ? Focus.recommendations : Focus.list
+
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(items, toSection: .main)
+        dataSource.apply(snapshot)
+        
+        toggleRefreshButtonTitle()
     }
 }
 
