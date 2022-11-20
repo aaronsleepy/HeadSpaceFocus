@@ -29,7 +29,7 @@ class FocusViewController: UIViewController {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FocusCell", for: indexPath) as? FocusCell else {
                 return nil
             }
-//            cell.configure(item)
+            cell.configure(item)
             return cell
         })
         
