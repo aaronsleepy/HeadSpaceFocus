@@ -16,6 +16,7 @@
 		93B14FD7292A47D1008A2F77 /* HeadSpaceFocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FD6292A47D1008A2F77 /* HeadSpaceFocusTests.swift */; };
 		93B14FE1292A47D1008A2F77 /* HeadSpaceFocusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FE0292A47D1008A2F77 /* HeadSpaceFocusUITests.swift */; };
 		93B14FE3292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FE2292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift */; };
+		93B14FF0292A4B41008A2F77 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FEF292A4B41008A2F77 /* FocusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		93B14FDC292A47D1008A2F77 /* HeadSpaceFocusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadSpaceFocusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B14FE0292A47D1008A2F77 /* HeadSpaceFocusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSpaceFocusUITests.swift; sourceTree = "<group>"; };
 		93B14FE2292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSpaceFocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93B14FEF292A4B41008A2F77 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				93B14FC1292A47CF008A2F77 /* SceneDelegate.swift */,
 				93B14FC3292A47CF008A2F77 /* FocusViewController.swift */,
 				93B14FC5292A47CF008A2F77 /* Main.storyboard */,
+				93B14FEF292A4B41008A2F77 /* FocusCell.swift */,
 				93B14FC8292A47D1008A2F77 /* Assets.xcassets */,
 				93B14FCA292A47D1008A2F77 /* LaunchScreen.storyboard */,
 				93B14FCD292A47D1008A2F77 /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				93B14FC4292A47CF008A2F77 /* FocusViewController.swift in Sources */,
 				93B14FC0292A47CF008A2F77 /* AppDelegate.swift in Sources */,
+				93B14FF0292A4B41008A2F77 /* FocusCell.swift in Sources */,
 				93B14FC2292A47CF008A2F77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
