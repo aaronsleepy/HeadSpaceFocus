@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5o2-Gi-wf1">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuickFocusCell" id="5o2-Gi-wf1" customClass="QuickFocusCell" customModule="HeadSpaceFocus" customModuleProvider="target">
                                         <rect key="frame" x="98.666666666666671" y="0.0" width="196" height="302"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ecJ-KB-0yq">
@@ -67,6 +67,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="196" height="302"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="5BD-xE-MO9" id="vkG-ZV-O4D"/>
+                                            <outlet property="thumbnailImageView" destination="vd8-qq-LhH" id="4ER-UU-UrD"/>
+                                            <outlet property="titleLabel" destination="gLk-RL-ATG" id="2N6-Yy-n1g"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
