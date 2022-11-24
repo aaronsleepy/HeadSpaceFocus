@@ -18,6 +18,7 @@
 		93B14FE3292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FE2292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift */; };
 		93B14FF0292A4B41008A2F77 /* FocusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FEF292A4B41008A2F77 /* FocusCell.swift */; };
 		93B14FF2292A4BE0008A2F77 /* Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B14FF1292A4BE0008A2F77 /* Focus.swift */; };
+		93E0DADC292F838B0008E246 /* QuickFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0DADB292F838B0008E246 /* QuickFocus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		93B14FE2292A47D1008A2F77 /* HeadSpaceFocusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadSpaceFocusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		93B14FEF292A4B41008A2F77 /* FocusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCell.swift; sourceTree = "<group>"; };
 		93B14FF1292A4BE0008A2F77 /* Focus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Focus.swift; sourceTree = "<group>"; };
+		93E0DADB292F838B0008E246 /* QuickFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickFocus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				93B14FC1292A47CF008A2F77 /* SceneDelegate.swift */,
 				93B14FC3292A47CF008A2F77 /* FocusViewController.swift */,
 				93B14FC5292A47CF008A2F77 /* Main.storyboard */,
+				93E0DADB292F838B0008E246 /* QuickFocus.swift */,
 				93B14FF1292A4BE0008A2F77 /* Focus.swift */,
 				93B14FEF292A4B41008A2F77 /* FocusCell.swift */,
 				93B14FC8292A47D1008A2F77 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E0DADC292F838B0008E246 /* QuickFocus.swift in Sources */,
 				93B14FF2292A4BE0008A2F77 /* Focus.swift in Sources */,
 				93B14FC4292A47CF008A2F77 /* FocusViewController.swift in Sources */,
 				93B14FC0292A47CF008A2F77 /* AppDelegate.swift in Sources */,
