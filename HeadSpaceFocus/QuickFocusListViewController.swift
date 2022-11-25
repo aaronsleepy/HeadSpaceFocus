@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+    
 class QuickFocusListViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -61,8 +61,11 @@ class QuickFocusListViewController: UIViewController {
                 
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
+        group.interItemSpacing = .fixed(10)
         
         let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 30, leading: 20, bottom: 30, trailing: 20)
+        section.interGroupSpacing = 20
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout

@@ -35,19 +35,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vd8-qq-LhH">
-                                                    <rect key="frame" x="25" y="27.000000000000007" width="145" height="96.666666666666686"/>
+                                                    <rect key="frame" x="0.0" y="10" width="196" height="130.66666666666666"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="vd8-qq-LhH" secondAttribute="height" multiplier="3:2" id="HgO-rU-Ty6"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walking in the city, London's Green Space" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-RL-ATG">
-                                                    <rect key="frame" x="0.0" y="138.66666666666666" width="196" height="43"/>
+                                                    <rect key="frame" x="0.0" y="155.66666666666666" width="196" height="43"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="True True True True True True True True True True True True True True True True True True True " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BD-xE-MO9" userLabel="True True True True True True True True True True True True True True True True True True True">
-                                                    <rect key="frame" x="0.0" y="191.66666666666666" width="196" height="81.333333333333343"/>
+                                                    <rect key="frame" x="0.0" y="208.66666666666666" width="196" height="81.333333333333343"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -56,14 +56,14 @@
                                             <constraints>
                                                 <constraint firstItem="gLk-RL-ATG" firstAttribute="leading" secondItem="ecJ-KB-0yq" secondAttribute="leading" id="5xV-Z9-SsU"/>
                                                 <constraint firstItem="5BD-xE-MO9" firstAttribute="leading" secondItem="ecJ-KB-0yq" secondAttribute="leading" id="CKo-Yc-2nQ"/>
-                                                <constraint firstItem="vd8-qq-LhH" firstAttribute="top" secondItem="ecJ-KB-0yq" secondAttribute="top" constant="27" id="Cwk-ak-G43"/>
+                                                <constraint firstItem="vd8-qq-LhH" firstAttribute="top" secondItem="ecJ-KB-0yq" secondAttribute="top" constant="10" id="Cwk-ak-G43"/>
                                                 <constraint firstItem="gLk-RL-ATG" firstAttribute="centerX" secondItem="ecJ-KB-0yq" secondAttribute="centerX" id="F6R-1b-jaL"/>
                                                 <constraint firstItem="gLk-RL-ATG" firstAttribute="top" secondItem="vd8-qq-LhH" secondAttribute="bottom" constant="15" id="JYZ-MI-Q5t"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5BD-xE-MO9" secondAttribute="bottom" constant="10" id="PJp-QX-doU"/>
                                                 <constraint firstItem="5BD-xE-MO9" firstAttribute="top" secondItem="gLk-RL-ATG" secondAttribute="bottom" constant="10" id="Qmu-Vb-2Kx"/>
-                                                <constraint firstAttribute="trailing" secondItem="vd8-qq-LhH" secondAttribute="trailing" constant="26" id="Wwf-yA-E71"/>
+                                                <constraint firstAttribute="trailing" secondItem="vd8-qq-LhH" secondAttribute="trailing" id="Wwf-yA-E71"/>
                                                 <constraint firstItem="5BD-xE-MO9" firstAttribute="centerX" secondItem="ecJ-KB-0yq" secondAttribute="centerX" id="iaU-1f-ha9"/>
-                                                <constraint firstItem="vd8-qq-LhH" firstAttribute="leading" secondItem="ecJ-KB-0yq" secondAttribute="leading" constant="25" id="uZR-rZ-YYe"/>
+                                                <constraint firstItem="vd8-qq-LhH" firstAttribute="leading" secondItem="ecJ-KB-0yq" secondAttribute="leading" id="uZR-rZ-YYe"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="196" height="302"/>
