@@ -43,6 +43,17 @@ class QuickFocusListViewController: UIViewController {
             return cell
         })
         
+        dataSource.supplementaryViewProvider = { (collectionView, kind, indexPath) in
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "QuickFocusHeaderView", for: indexPath) as? QuickFocusHeaderView else {
+                return nil
+            }
+            
+            let allSections = Section.allCases
+            let section = allSections[indexPath.section]
+            header.configure(section.title)
+            return header
+        }
+        
         // Data
         var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
         snapshot.appendSections([.breathe, .walking])
@@ -66,6 +77,10 @@ class QuickFocusListViewController: UIViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = NSDirectionalEdgeInsets(top: 30, leading: 20, bottom: 30, trailing: 20)
         section.interGroupSpacing = 20
+        
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(50))
+        let header = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        section.boundarySupplementaryItems = [header]
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout

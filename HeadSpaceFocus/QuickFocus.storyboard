@@ -22,13 +22,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Thp-b0-uB5">
                                     <size key="itemSize" width="196" height="302"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuickFocusCell" id="5o2-Gi-wf1" customClass="QuickFocusCell" customModule="HeadSpaceFocus" customModuleProvider="target">
-                                        <rect key="frame" x="98.666666666666671" y="0.0" width="196" height="302"/>
+                                        <rect key="frame" x="98.666666666666671" y="50" width="196" height="302"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ecJ-KB-0yq">
                                             <rect key="frame" x="0.0" y="0.0" width="196" height="302"/>
@@ -74,6 +74,25 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuickFocusHeaderView" id="2RK-44-SXW" customClass="QuickFocusHeaderView" customModule="HeadSpaceFocus" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mindful walks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUv-PV-lXs">
+                                            <rect key="frame" x="0.0" y="13" width="129.66666666666666" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tUv-PV-lXs" firstAttribute="leading" secondItem="2RK-44-SXW" secondAttribute="leading" id="r6Y-YV-Kqc"/>
+                                        <constraint firstItem="tUv-PV-lXs" firstAttribute="centerY" secondItem="2RK-44-SXW" secondAttribute="centerY" id="yTr-vM-4DG"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="tUv-PV-lXs" id="RT3-Wm-Z6d"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
