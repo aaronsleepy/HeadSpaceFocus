@@ -95,6 +95,7 @@ extension FocusViewController: UICollectionViewDelegate {
         
         let storyboarad = UIStoryboard(name: "QuickFocus", bundle: nil)
         let viewController = storyboarad.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        viewController.title = item.title
         
 //        present(viewController, animated: true)
         navigationController?.pushViewController(viewController, animated: true)
