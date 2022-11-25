@@ -46,6 +46,8 @@ class FocusViewController: UIViewController {
         
         collectionView.collectionViewLayout = layout()
         
+        collectionView.delegate = self
+        
         toggleRefreshButtonTitle()
     }
 
@@ -87,3 +89,15 @@ class FocusViewController: UIViewController {
     }
 }
 
+extension FocusViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.item]
+        
+        let storyboarad = UIStoryboard(name: "QuickFocus", bundle: nil)
+        let viewController = storyboarad.instantiateViewController(withIdentifier: "QuickFocusListViewController") as! QuickFocusListViewController
+        viewController.title = item.title
+        
+//        present(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}
