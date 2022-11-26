@@ -12,7 +12,6 @@
   * Datasource: `UICollectionViewDiffableDataSource`
   * Layout: `UICollectionViewCompositionalLayout`
 * part3/navigation
-* part4/combine
 
 
 ## 학습자료
